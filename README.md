@@ -77,11 +77,6 @@
       color: #ffcc00;
       font-weight: bold;
     }
-    #back-button {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-    }
     .answer-line {
       margin-top: 20px;
       font-size: 1.2rem;
@@ -166,8 +161,6 @@
       </div>
 
       <div id="message" class="message"></div>
-      
-      <button id="back-button" onclick="goBackToRoleSelection()">Назад</button>
     </div>
   </div>
 
@@ -184,8 +177,6 @@
       </div>
 
       <div id="quote-message" class="message"></div>
-      
-      <button id="back-button" onclick="goBackToTaskPage()">Назад</button>
     </div>
   </div>
 
@@ -212,8 +203,7 @@
       </div>
 
       <div id="final-message" class="message"></div>
-      
-      <button onclick="goBackToCongratulation()">Назад</button>
+      <div id="hint" class="message" style="color: #ffcc00; font-size: 1.2rem;"></div> <!-- Подсказка -->
     </div>
   </div>
 
@@ -222,7 +212,6 @@
     <div class="overlay">
       <h1>Поздравляем, ты выиграл!</h1>
       <p>Ты верно ответил и открыл новую страницу приключений!</p>
-      <button onclick="goBackToRoleSelection()">Вернуться на начало</button>
     </div>
   </div>
 
@@ -231,7 +220,6 @@
     <div class="overlay">
       <h1>Ты достиг великого успеха!</h1>
       <p>Теперь ты готов к новым испытаниям. Следующая глава приключения открывается!</p>
-      <button onclick="goBackToRoleSelection()">Вернуться на начало</button>
     </div>
   </div>
 
@@ -300,13 +288,12 @@
     function checkFinalAnswer() {
       const finalAnswer = document.getElementById("final-answer").value.trim().toLowerCase();
       const finalMessageBox = document.getElementById("final-message");
+      const hintBox = document.getElementById("hint");
 
-      // Правильный ответ
       if (finalAnswer === "призраки в венеции" || finalAnswer === "Призраки в Венеции") {
         finalMessageBox.textContent = "Ты прав, это 'Призраки в Венеции'!";
         finalMessageBox.style.color = "#00FF00";
 
-        // Переход на новую страницу через 2 секунды
         setTimeout(() => {
           document.getElementById("final-question-page").classList.add("hidden");
           document.getElementById("new-page").classList.remove("hidden");
@@ -314,22 +301,8 @@
       } else {
         finalMessageBox.textContent = "Попробуй еще раз!";
         finalMessageBox.style.color = "#FF0000";
+        hintBox.textContent = "Подсказка: Венеция";
       }
-    }
-
-    function goBackToRoleSelection() {
-      document.getElementById("new-page").classList.add("hidden");
-      document.getElementById("role-selection-page").classList.remove("hidden");
-    }
-    
-    function goBackToTaskPage() {
-      document.getElementById("quote-page").classList.add("hidden");
-      document.getElementById("task-page").classList.remove("hidden");
-    }
-
-    function goBackToCongratulation() {
-      document.getElementById("final-question-page").classList.add("hidden");
-      document.getElementById("congratulation-page").classList.remove("hidden");
     }
   </script>
 
