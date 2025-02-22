@@ -129,7 +129,7 @@
     function startTask() {
       document.getElementById("role-selection-page").classList.add("hidden");
       document.getElementById("task-page").classList.remove("hidden");
-      document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/fanonsmesh/images/5/52/Компьютер_Ёжика_Лосяш_и_Пин_показывают_компьютер.png/revision/latest?cb=20191220142858&path-prefix=ru')";  // Фон для страницы задания
+      document.body.style.backgroundImage = "url('https://i.pinimg.com/736x/8a/14/28/8a1428c84de967a20bbebb9b570053d7.jpg')";  // Фон для страницы задания
     }
 
     function checkAnswer() {
@@ -161,7 +161,7 @@
         setTimeout(() => {
           document.getElementById("quote-page").classList.add("hidden");
           document.getElementById("congratulation-page").classList.remove("hidden");
-          document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/smesharikiarhives/images/4/43/Map.png/revision/latest?cb=20230106190953&path-prefix=ru')";  // Фон для страницы поздравления
+          document.body.style.backgroundImage = "url('https://i.pinimg.com/736x/f0/d7/99/f0d799f031476828b642107e53a47e3e.jpg')";  // Фон для страницы поздравления
         }, 2000);
       } else {
         quoteMessageBox.textContent = "Подсказка: это маленькое животное!";
