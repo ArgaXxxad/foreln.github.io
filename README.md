@@ -92,7 +92,7 @@
 
   <div id="congratulation-page" class="page hidden">
     <div class="overlay">
-      <h1>Поздравляем, Принцесса!</h1>
+      <h1>Поздравляем, Boba!</h1>
       <p>Ты прошел все задания и стал настоящим героем приключения!</p>
       <p>Запомни эти цифры, сделай Screenshot или запиши:</p>
       <div id="moving-numbers">
@@ -115,7 +115,7 @@
   <div id="new-page" class="page hidden">
     <div class="overlay">
       <h1>Поздравляем, ты выиграл!Но это только начало</h1>
-      <button onclick="window.location.href='https://argaxxxad.github.io/Forelnt/'">Перейти на сайт</button>
+      <button onclick="window.location.href='https://example.com'">Перейти на сайт</button>
     </div>
   </div>
 
@@ -129,7 +129,7 @@
     function startTask() {
       document.getElementById("role-selection-page").classList.add("hidden");
       document.getElementById("task-page").classList.remove("hidden");
-      document.body.style.backgroundImage = "url('blob:https://ru.pinterest.com/6eecc68a-b756-4cf8-928d-ce98a1b2899b')";  // Фон для страницы задания
+      document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/fanonsmesh/images/5/52/Компьютер_Ёжика_Лосяш_и_Пин_показывают_компьютер.png/revision/latest?cb=20191220142858&path-prefix=ru')";  // Фон для страницы задания
     }
 
     function checkAnswer() {
@@ -161,7 +161,7 @@
         setTimeout(() => {
           document.getElementById("quote-page").classList.add("hidden");
           document.getElementById("congratulation-page").classList.remove("hidden");
-          document.body.style.backgroundImage = "url('https://i.pinimg.com/736x/f0/d7/99/f0d799f031476828b642107e53a47e3e.jpg')";  // Фон для страницы поздравления
+          document.body.style.backgroundImage = "url('https://static.wikia.nocookie.net/smesharikiarhives/images/4/43/Map.png/revision/latest?cb=20230106190953&path-prefix=ru')";  // Фон для страницы поздравления
         }, 2000);
       } else {
         quoteMessageBox.textContent = "Подсказка: это маленькое животное!";
