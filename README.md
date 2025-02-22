@@ -115,7 +115,7 @@
   <div id="new-page" class="page hidden">
     <div class="overlay">
       <h1>Поздравляем, ты выиграл!Но это только начало</h1>
-      <button onclick="window.location.href='https://example.com'">Перейти на сайт</button>
+      <button onclick="window.location.href='https://argaxxxad.github.io/Forelnt/'">Перейти на сайт</button>
     </div>
   </div>
 
