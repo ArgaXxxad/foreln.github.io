@@ -193,7 +193,7 @@
           document.body.style.backgroundImage = "url('https://pic3.fc-zenit.ru/upload/gallery/video/13128/247153_s1200.jpg')";  // Фон для страницы победы
         }, 2000);
       } else {
-        finalMessageBox.textContent = "Не сдавайся, попробуй еще раз!";
+        finalMessageBox.textContent = "Подсказка: это происходило в Венеции";
         finalMessageBox.style.color = "#FF0000";
         hintBox.textContent = "Подсказка: это фильм о духах!";
       }
